@@ -1,6 +1,4 @@
 
-import Clases.Computador;
-
 //package Clases;
 
 public class Ejecutar {

@@ -1,26 +1,30 @@
-    //Atributos de la clase
-    private int Numero_Cuenta;
-    private double Saldo;
-    private string Titular;
+public class CuentaBancaria {
+    // Atributos de la clase
+    private int numeroCuenta;
+    private double saldo;
+    private String titular;
 
-    //Metodo Constructor de la clase 
-    public CuentaBancaria(int Numero_Cuenta, double Saldo, String Titular) {
-        this.Numero_Cuenta = Numero_Cuenta;
-        this.Saldo = Saldo;
-        this.Titular = Titular;
-    
-
-    //Metodos de la clase
-    public String Depositar(double Cantidad){
-        return Saldo += Cantidad;
+    // Método constructor de la clase
+    public CuentaBancaria(int numeroCuenta, double saldo, String titular) {
+        this.numeroCuenta = numeroCuenta;
+        this.saldo = saldo;
+        this.titular = titular;
     }
 
-    public String Retirar(double Cantidad){
-        return Saldo -= Cantidad;
-    }
-    
-    public void Consultar_Saldo(){
-        System.out.println("La Cuenta N° " + Numero_Cuenta + " tiene un saldo de: " + Saldo);
+    // Métodos de la clase
+    public void depositar(double cantidad) {
+        saldo += cantidad;
     }
 
-   
+    public void retirar(double cantidad) {
+        if (cantidad <= saldo) {
+            saldo -= cantidad;
+        } else {
+            System.out.println("Fondos insuficientes.");
+        }
+    }
+
+    public void consultarSaldo() {
+        System.out.println("La cuenta N° " + numeroCuenta + " tiene un saldo de: " + saldo);
+    }
+}
