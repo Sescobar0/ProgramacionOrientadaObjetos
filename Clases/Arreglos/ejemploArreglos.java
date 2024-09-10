@@ -44,7 +44,6 @@ public class ejemploArreglos {
         
         System.out.println("La factura esta por: " + precioTotal);
 
-
     }
 
 }    
