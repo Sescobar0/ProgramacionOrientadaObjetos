@@ -13,8 +13,8 @@ public class Estudiante extends Persona{
 
     public String mostrarInfo(){
         return "Estudiante: [ Nombre:" + getNombre() +" " 
-        + getApellido() + "Año de Nacimiento : " + getanioNacimiento() 
-        +"id: " + id + "]";
+        + getApellido() + " Año de Nacimiento : " + getanioNacimiento() 
+        +" id: " + id + "]";
     }
 
 }
