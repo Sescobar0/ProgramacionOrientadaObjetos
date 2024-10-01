@@ -1,5 +1,6 @@
 package Clases.ComposicionAgregacion;
 
+
 public class HistoriaClinica {
     
     private String anamnesis;
