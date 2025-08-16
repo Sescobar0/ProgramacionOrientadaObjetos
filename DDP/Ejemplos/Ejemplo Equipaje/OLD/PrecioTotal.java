@@ -1,4 +1,6 @@
-public public class PrecioTotal {
+package OLD;
+
+public class PrecioTotal {
 
     private double totalPrecios;
     private double totalBodega;

@@ -1,3 +1,5 @@
+package OLD;
+
 public class Bodega extends Equipaje {
     
     private static final double CAPACIDAD = 8.0;

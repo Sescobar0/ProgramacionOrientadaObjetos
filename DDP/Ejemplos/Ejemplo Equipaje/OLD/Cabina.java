@@ -1,3 +1,5 @@
+package OLD;
+
 public class Cabina extends Equipaje {
     
     private static final int TIEMPO = 2;

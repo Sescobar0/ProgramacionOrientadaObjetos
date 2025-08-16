@@ -1,3 +1,4 @@
+package OLD;
 public class Equipaje {
     
     private static final double PESO = 10.0;
