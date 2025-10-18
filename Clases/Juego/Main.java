@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    public static void main ( String [] args ) {
-        Scanner scanner = new Scanner (System.in) ;
-        System.out.print (" Introduce el nombre del jugador 1:") ;
-        String nombre1 = scanner . nextLine () ;
+        System.out.print("Nombre del jugador 1: ");
+        Personaje p1 = new Personaje(sc.nextLine(), new AtaqueBasico());
 
-        System . out . print (" Introduce el nombre del jugador 2:") ;
-        String nombre2 = scanner . nextLine () ;
+        System.out.print("Nombre del jugador 2: ");
+        Personaje p2 = new Personaje(sc.nextLine(), new AtaqueBasico());
 
-        JuegoLucha juego = new JuegoLucha ( nombre1 , nombre2 ) ;
-        juego . iniciarPelea () ;
+        JuegoLucha juego = new JuegoLucha(p1, p2);
+        juego.iniciarPelea();
     }
 }
