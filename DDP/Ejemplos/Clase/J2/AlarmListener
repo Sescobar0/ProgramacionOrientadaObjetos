@@ -1,0 +1,3 @@
+interface AlarmListener {
+    void alarm();
+}
